@@ -7,8 +7,8 @@
     height: 80px;
     border-radius: 8px;
     border: none;
-    background-color: rgb(118, 200, 238);
-    box-shadow: 4px 4px 4px lightblue;
+    background-color: rgb(180, 190, 195);
+    box-shadow: 4px 4px 4px rgb(63, 78, 83);
   }
   
   .contactList {
