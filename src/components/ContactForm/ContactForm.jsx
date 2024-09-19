@@ -16,9 +16,9 @@ const ContactForm = ({ addContact }) => {
       .required('Обязательное поле'),
   });
 
-  const handleForm = (values, actions) => {
-    addContact(values);  // Передача значений без обёртки { values }
-    actions.resetForm();  // Сброс формы
+  const handleForm = (value, actions) => {
+    addContact(value);  
+    actions.resetForm(); 
   };
 
   return (
