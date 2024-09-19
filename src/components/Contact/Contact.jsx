@@ -1,16 +1,16 @@
-import styles from "./Contact.module.css";
+import s from "./Contact.module.css";
 
-const Contact = ({ user, handleClickUSerDelete }) => {
+const Contact = ({ user, handleDeleteContactUser }) => {
   return (
     <>
       <div>
-        <p className={styles.contactText}>{user.name}</p>
-        <p className={styles.contactText}>{user.number}</p>
+        <p className={s.contactText}>{user.name}</p>
+        <p className={s.contactText}>{user.number}</p>
       </div>
       <button
+        className={s.contactBtn}
         type="button"
-        className={styles.btncon}
-        onClick={() => handleClickUSerDelete(user.id)}
+        onClick={() => handleDeleteContactUser(user.id)}
       >
         Delete
       </button>
